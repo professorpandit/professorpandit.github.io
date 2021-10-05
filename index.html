@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="./style.css">
 	<!-- <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Tangerine" rel="stylesheet"> -->
 	<title>Kaushal Kumar</title>
-<!-- 	<script type="text/javascript">
+	<!-- 	<script type="text/javascript">
 		window.onbeforeunload = function() {
 			return "Thanks for visiting here. Do you really wish to go?"
 		}
@@ -20,118 +21,142 @@
 	<script src="js/ajaxed.js"></script>
 	<script>
 		function myFunction() {
-		   var element = document.body;
-		   element.classList.toggle("dark-mode");
+			var element = document.body;
+			element.classList.toggle("dark-mode");
 		}
 	</script>
 	<script type="text/javascript">
-		$(function(){
-			$('.theclass > li a').click(function(){
+		$(function () {
+			$('.theclass > li a').click(function () {
 				$(this).parent().find('li').toggle();
 			});
 		});
 	</script>
 	<script type="text/javascript">
-		tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-		tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
-		function GetClock(){
-			var d=new Date();
-			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
-			if(nyear<1000) nyear+=1900;
-			var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
-			if(nmin<=9) nmin="0"+nmin
-				if(nsec<=9) nsec="0"+nsec;
-			document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+		tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+		tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+		function GetClock() {
+			var d = new Date();
+			var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate(), nyear = d.getYear();
+			if (nyear < 1000) nyear += 1900;
+			var nhour = d.getHours(), nmin = d.getMinutes(), nsec = d.getSeconds();
+			if (nmin <= 9) nmin = "0" + nmin
+			if (nsec <= 9) nsec = "0" + nsec;
+			document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + "";
 		}
-		$(document).ready(function(){
+		$(document).ready(function () {
 			GetClock();
-			setInterval(GetClock,1000);
+			setInterval(GetClock, 1000);
 		})
 	</script>
 </head>
+
 <body id="mainbody">
-	<section><header><div id="hsection"> 
-		<div id="headed">
-			<div id="pagetitle" style="width:80%; float: left;">
-				Kaushal Kumar
-			</div>
-			<div id="togglebutton">
-				<button onclick="myFunction()" style="font-family: Product Sans; font-size: 0.22em; float: right;">Toggle dark mode</button>
-			</div>
-			<div id="subheaded">
+	<div id="particles-js">
+		<div id="wrapper">
+			<section>
+				<header>
+					<div id="hsection">
+						<div id="headed">
+							<div id="pagetitle" style="width:80%; float: left;">
+								Kaushal Kumar
+							</div>
+							<div id="togglebutton">
+								<button onclick="myFunction()"
+									style="font-family: Product Sans; font-size: 0.22em; float: right;">Toggle dark
+									mode</button>
+							</div>
+							<div id="subheaded">
+								<span class="typedin"></span>
+								<hr id="hline" />
+							</div>
+						</div>
+
+						<!-- 		<div id="subheaded">
 				<span class="typedin"></span>
 				<hr id="hline"/>
-			</div>
-		</div>
+			</div>	 -->
+					</div>
+				</header>
+			</section>
+			<section>
+				<article>
+					<div id="bsection">
+						<div id="navdiv">
+							<ul>
+								<li><a id="ihome" style="cursor: pointer;">Home</a></li>
+								<li><a id="iabout" style="cursor: pointer;">About Me</a></li>
+								<li><a id="ichildhood" style="cursor: pointer;">Early Life</a></li>
+								<li><a id="icollege" style="cursor: pointer;">The College</a></li>
+								<li><a id="inss" style="cursor: pointer;">NSS Chapter</a></li>
+								<li><a id="ilove" style="cursor: pointer;">The Life</a></li>
+								<li><a id="istep" style="cursor: pointer;">The First Step</a></li>
+								<li><a id="idad" style="cursor: pointer;">My Parents</a></li>
+								<li><a id="icontact" style="cursor: pointer;">Contact me</a></li>
+								<li><a id="ifeedback" style="cursor: pointer;">Website Feedback</a></li>
+							</ul>
+						</div>
+						<div id="contentdiv">
 
-<!-- 		<div id="subheaded">
-			<span class="typedin"></span>
-			<hr id="hline"/>
-		</div>	 -->	
-	</div></header></section>
-	<section><article><div id="bsection">
-		<div id="navdiv">
-			<ul>
-				<li><a id="ihome" style="cursor: pointer;">Home</a></li>
-				<li><a id="iabout" style="cursor: pointer;">About Me</a></li>
-				<li><a id="ichildhood" style="cursor: pointer;">Early Life</a></li>
-				<li><a id="icollege" style="cursor: pointer;">The College</a></li>
-				<li><a id="inss" style="cursor: pointer;">NSS Chapter</a></li>
-				<li><a id="ilove" style="cursor: pointer;">The Life</a></li>
-				<li><a id="istep" style="cursor: pointer;">The First Step</a></li>
-				<li><a id="idad" style="cursor: pointer;">My Parents</a></li>
-				<li><a id="icontact" style="cursor: pointer;">Contact me</a></li>
-				<li><a id="ifeedback" style="cursor: pointer;">Website Feedback</a></li>
-			</ul>
-		</div>
-		<div id="contentdiv">
+						</div>
+						<div id="advdiv">
+							<ol class="theclass">
+								<li id="appl" style="margin: 10px 0;"><a>Relevant Links</a>
+									<ol id="control" style="margin: 10px 0;">
+										<li id="applitem1">
+											<a href="http://www.smvdu.ac.in/" target="_blank">The SMVDU</a>
+										</li>
+										<li id="applitem1">
+											<a href="http://vikalp.smvdu.ac.in/" target="_blank">The Vikalp</a>
+										</li>
+										<!--<li id="applitem1">
+								<a >Resume</a>
+							</li>-->
+										<li id="applitem1">
+											<a href="https://www.youtube.com/watch?v=LyqlT17EVSA"
+												target="_blank">Surrealism</a>
+										</li>
+									</ol>
+							</ol>
+						</div>
 
-		</div>
-		<div  id="advdiv">
-			<ol class="theclass">
-				<li id="appl" style="margin: 10px 0;"><a>Relevant Links</a>
-					<ol id="control" style="margin: 10px 0;">
-						<li id="applitem1">
-							<a href="http://www.smvdu.ac.in/" target="_blank">The SMVDU</a>
-						</li>
-						<li id="applitem1">
-							<a href="http://vikalp.smvdu.ac.in/" target="_blank">The Vikalp</a>
-						</li>
-						<!--<li id="applitem1">
-							<a >Resume</a>
-						</li>-->
-						<li id="applitem1">
-							<a href="https://www.youtube.com/watch?v=LyqlT17EVSA" target="_blank">Surrealism</a>
-						</li>
-					</ol>
-				</ol>
-			</div>
+					</div>
+				</article>
+			</section>
+			<section>
+				<footer>
+					<div id="fsection">
+						<footer>
+							<div>
+								<hr id="fline" />
+								<p> &#169 Kaushal Kumar&#174 </p>
 
-		</div></article></section>
-		<section><footer><div id="fsection">
-			<footer>
-				<div>
-					<hr id="fline"/>
-					<p> &#169 Kaushal Kumar&#174 </p>
+							</div>
+							<div id="clockbox"></div>
 
-				</div>
-				<div id="clockbox"></div>
+					</div>
+				</footer>
+			</section>
 
-			</div></footer></section>
-			
-<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyANbB29GAEc1_h3pgqP09L4GAI-nmd9ciQ",
-    authDomain: "kaushal-b76e0.firebaseapp.com",
-    databaseURL: "https://kaushal-b76e0.firebaseio.com",
-    projectId: "kaushal-b76e0",
-    storageBucket: "kaushal-b76e0.appspot.com",
-    messagingSenderId: "1069566525626"
-  };
-  firebase.initializeApp(config);
-</script>
+			<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+			<script>
+				// Initialize Firebase
+				var config = {
+					apiKey: "AIzaSyANbB29GAEc1_h3pgqP09L4GAI-nmd9ciQ",
+					authDomain: "kaushal-b76e0.firebaseapp.com",
+					databaseURL: "https://kaushal-b76e0.firebaseio.com",
+					projectId: "kaushal-b76e0",
+					storageBucket: "kaushal-b76e0.appspot.com",
+					messagingSenderId: "1069566525626"
+				};
+				firebase.initializeApp(config);
+			</script>
 			<script src="js/ajaxed.js"></script>
-		</body>
-		</html>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="./js/particles.js"></script>
+	<script src="./js/app.js"></script>
+</body>
+
+</html>
