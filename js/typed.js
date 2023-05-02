@@ -152,7 +152,7 @@
 }(window.jQuery);
 $(function () {
     $("span.typedin").typed({
-        strings: ["A Lover", "A son", "A Brother", "A Friend", "A Student", "A Teacher", "A Mechanical Engineer", "A Mathematics Enthusiast", "A Researcher", "The Google Kid", "An IT Professional", "Mr Forrest Gump", "... ."],
+        strings: ["A Lover", "A son", "A Brother", "A Friend", "A Student", "A Teacher", "A Mechanical Engineer", "A Mathematics Enthusiast", "A Researcher", "The Google Kid", "An IT Executive", "A Business Analyst", "Mr Forrest Gump", "... ."],
         typeSpeed: 30, // typing speed
         backDelay: 500, // pause before backspacing
         callback: function () { $(this) }
